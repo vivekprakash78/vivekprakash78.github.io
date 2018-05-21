@@ -1,90 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <title>Vivek Prakash</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/favicon.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 20px Muli, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body>
+	<head>
+		<title>Quadrivium Devs</title>
+		<link rel="icon" href="./favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/card.css">
+	</head>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="./assets/vivek.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
-  <h3>I'm a programmer</h3>
-</div>
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Designed by : <a href="https://vivekprakash78.github.io">Vivek Prakash</a></p> 
-</footer>
-
-</body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="frost">
+					<div class="overlay"></div>
+				</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home">Quadrivium Devs</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">About</a></li>
+						<li><a href="#android">Android</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="glass">
+			<div class="overlay"></div>
+		</div>
+		<div id="home" class="container-fluid">
+			<div class="centered">
+				<div class="logo-image">
+					<img  height="256px" width="256px" src="./assets/svg/qdLogo.svg"/>
+				</div>
+				<div id="button" class="svg-wrapper">
+					<svg height="64" width="256" xmlns="http://www.w3.org/2000/svg">
+						<rect class="shape" height="64" width="256" />
+					</svg>
+					<div class="logo-text">
+						<span><img height="64px" width="256px" src="./assets/svg/qdName.svg"/></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="about" class="container-fluid">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1>About</h1>
+					<p>Quadrivium Devs is a group of 4 individuals based in Kolkata, India. We work on full stack web development using PHP with MySQL and Android application development.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row" >
+						<div class="col-md-3">
+							<div class="card">
+								<div class="avatar">
+									<img class="img img-circle img-thumbnail img-responsive" alt="" src="./assets/img/vivek.jpeg">
+									<div class="logo">
+										<a href="https://www.linkedin.com/in/vivek-prakash/"><span><i class="fab fa-linkedin-in"></i></span></a>
+									</div>
+								</div>
+								<div class="info">
+									<div class="title">Vivek Prakash</div>
+									<div class="desc">Information Technology</div>
+									<div class="desc">St. Thomas' College of Technology and Engineering</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card hovercard">
+								<div class="avatar">
+									<img class="img img-circle img-thumbnail img-responsive" alt="" src="./assets/img/neha.jpeg">
+									<div class="logo">
+										<a href="https://www.linkedin.com/in/joshi22neha/"><span><i class="fab fa-linkedin-in"></i></span></a>
+									</div>
+								</div>
+								<div class="info">
+									<div class="title">Neha Joshi</div>
+									<div class="desc">Information Technology</div>
+									<div class="desc">St. Thomas' College of Technology and Engineering</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card hovercard">
+								<div class="avatar">
+									<img class="img img-circle img-thumbnail img-responsive" alt="" src="./assets/img/ss.png">
+									<div class="logo">
+										<a href="https://www.linkedin.com/in/sunny-singh-960081114/"><span><i class="fab fa-linkedin-in"></i></span></a>
+									</div>
+								</div>
+								<div class="info">
+									<div class="title">Sunny Singh</div>
+									<div class="desc">Information Technology</div>
+									<div class="desc">St. Thomas' College of Technology and Engineering</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card hovercard">
+								<div class="avatar">
+									<img class="img img-circle img-thumbnail img-responsive" alt="" src="./assets/img/ks.png">
+									<div class="logo">
+										<a href="https://www.linkedin.com/in/kewal-sharma-a8119b119/"><span><i class="fab fa-linkedin-in"></i></span></a>
+									</div>
+								</div>
+								<div class="info">
+									<div class="title">Kewal Sharma</div>
+									<div class="desc">Information Technology</div>
+									<div class="desc">St. Thomas' College of Technology and Engineering</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="android" class="container-fluid">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1>Bon Voyage</h1>
+					<p>A travel guide application which is your true companion away from home, know about places to visit, hotels, cafes, events.Don't worry we got u covered from emergencies also find hospitals, ATM, pharmacy, gas stations near you.We don't sell your data out, and we are ad-free. How do we make the profit? We don't, because we care about your experience more than money.</p>
+					<a href="https://play.google.com/store/apps/details?id=com.quadrivium.devs.bonvoyage" class="btn btn-success"> <span class="fab fa-google-play"></span> Download from play store</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img src="./assets/svg/places.svg" class="img-responsive ">
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer text-center">
+			<h4>Made with <span class="fa fa-heart" style="color:#ff0f4b"></span> by Quadrivium Devs</h4> 
+		</footer>
+	</body>
 </html>

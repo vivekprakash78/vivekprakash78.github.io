@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  font-family: 'Raleway', sans-serif;
+}
+#home{ 
+	/*background: #2C3E50;*/
+	height:675px;
+}
+#about {
+	padding-top:50px;
+  min-height:675px;
+	color: #ffffff;
+	background-color: rgba(18,18,18,0.5);
+}
+#android {
+  padding-top:50px;
+  min-height:675px;
+  color: white;
+}
+.footer { 
+    padding-top:50px;
+    padding-bottom:50px;
+	background-color: #121212;;
+    color: #FDFDFD;
+}
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-image{
+	height:256px;
+	width:256px;
+	margin: 0 auto;
+}
+.svg-wrapper {
+  height: 64px;
+  margin: 0 auto;
+  width: 256px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 256 320;
+  stroke-dashoffset: 256;
+  stroke-width: 5px;
+  stroke: #ff0f4b;
+}
+
+.logo-text {
+  position: relative;
+  top: -70px;
+}
+
+.glass{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-image:url('../img/bodyBg.png');
+  background-size: cover;
+  background-position: center; 
+  filter:blur(5px);
+  transform: scale(1.1); 
+}
+.glass .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 256 320;
+    stroke-dashoffset: -320;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+}
+.svg-wrapper:hover .shape {
+  -webkit-animation: 1s draw linear forwards;
+  animation: 1s draw linear forwards;
+}
