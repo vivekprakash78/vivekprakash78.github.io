@@ -18,41 +18,19 @@ body {
   color: white;
 }
 .footer { 
-    padding-top:50px;
-    padding-bottom:50px;
+  padding-top:50px;
+  padding-bottom:50px;
 	background-color: #121212;;
-    color: #FDFDFD;
+  color: #FDFDFD;
 }
-.centered {
-  position: relative;
-  top: 50%;
-  left: 50%;
+.center {
+  position: absolute;
+  left: 40%;
+  top: 60%;
   transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
 }
-.logo-image{
-	height:256px;
-	width:256px;
-	margin: 0 auto;
-}
-.svg-wrapper {
-  height: 64px;
-  margin: 0 auto;
-  width: 256px;
-}
-
-.shape {
-  fill: transparent;
-  stroke-dasharray: 256 320;
-  stroke-dashoffset: 256;
-  stroke-width: 5px;
-  stroke: #ff0f4b;
-}
-
-.logo-text {
-  position: relative;
-  top: -70px;
-}
-
 .glass{
   position: fixed;
   height: 100vh;
