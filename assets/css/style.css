@@ -4,7 +4,8 @@ body {
 }
 #home{ 
 	/*background: #2C3E50;*/
-	height:675px;
+	padding-top: 150px;
+  height: 400px;
 }
 #about {
 	padding-top:50px;
@@ -25,10 +26,10 @@ body {
 }
 .center {
   position: absolute;
-  left: 40%;
-  top: 60%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 50%;
   height: 50%;
 }
 .glass{
