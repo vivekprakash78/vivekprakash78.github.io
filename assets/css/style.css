@@ -2,7 +2,7 @@
 
 body{font-family: 'Muli', sans-serif;}
 
-ul {
+ul.none{
   list-style-type: none;
   padding: 0;
   margin:0;
