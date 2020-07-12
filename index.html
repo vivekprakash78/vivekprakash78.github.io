@@ -92,8 +92,11 @@
 						<div class="col-xs-9">
 							<h3><b>MAQ Software</b></h3>
 						</div>
+						<div class="col-xs-3 text-right">
+							<h4><b><span id='year'>X</span> year, <span id='months'>Y</span> months</b></h4>
+						</div>
 						<script>
-							var b = new Date(2019, 3, 30);
+							var b = new Date();
 							var a = new Date(2018, 06, 30);
 							var years = 0;
 							var months = (b.getFullYear() - a.getFullYear()) * 12;
@@ -105,12 +108,9 @@
 								years = months / 12;
 								months = months % 12;
 							}
-							$('#year').html(years);
+							$('#year').html(Math.floor(years));
 							$('#months').html(months);
 						</script>
-						<div class="col-xs-3 text-right">
-							<h4><b><span id='year'>0</span> year, <span id='months'>9</span> months</b></h4>
-						</div>
 					</div>
 					<h4>Sofware Engineer</h4>
 					<p>July '18 - present</p>
@@ -388,6 +388,9 @@
 
 					<h3><i class="fas fa-certificate"></i> Certifications</h3>
 					<ul>
+						<li><b>Microsoft: </b>Azure Developer Associate</li>
+						<li><b>Microsoft: </b>Exam 762 - Developing SQL Databases</li>
+						<li><b>Microsoft: </b>Exam 767 - Implementing a Data Warehouse</li>
 						<li><b>Microsoft: </b>Exam 768 - Developing SQL Data Models</li>
 						<li><b>Coursera: </b>Warehousing for Business Intellingence Specialization</li>
 						<li><b>Microsoft: </b>Exam 778 - Analyzing and Visualizing Data with Power BI</li>
